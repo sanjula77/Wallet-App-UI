@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import com.example.walletappui.ui.theme.WalletAppUITheme
 import com.example.walletappui.wallet_UI.ActionSection
 import com.example.walletappui.wallet_UI.CardSection
+import com.example.walletappui.wallet_UI.SpendingGraph
 import com.example.walletappui.wallet_UI.SpendingSection
 import com.example.walletappui.wallet_UI.TopBar
 import kotlin.random.Random
@@ -71,6 +72,11 @@ class MainActivity : ComponentActivity() {
 
             Spacer(modifier = Modifier.height(20.dp))
             SpendingSection(modifier= Modifier.fillMaxWidth())
+
+            Spacer(modifier = Modifier.height(20.dp))
+            SpendingGraph(modifier= Modifier.fillMaxWidth().height(250.dp))
+
+            Spacer(modifier = Modifier.height(0.dp))
         }
     }
 
